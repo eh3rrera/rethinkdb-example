@@ -1,0 +1,20 @@
+{
+  "name": "rethinkdb-example",
+  "version": "1.0.0",
+  "description": "Simple example to show the realtime functionality of RethinkDB",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Esteban Herrera",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "1.15.1",
+    "ejs": "2.4.2",
+    "express": "4.13.4",
+    "path": "0.12.7",
+    "rethinkdb": "2.3.2",
+    "socket.io": "1.4.6"
+  }
+}

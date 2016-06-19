@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <title>Movie Voting</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="voting.js"></script>
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Movie Voting</h1>
+        <ul class='movies'>
+            <% movies.forEach(function(movie, index){ %>
+            <li class='movie' id='<%= movie.id %>'>
+                <span class='position'><%= index+1 %></span>
+                <div class='vote'>
+                    <div class='btnVote'>
+                        <span class='btnLike'><i class='fa fa-thumbs-up fa-2x'></i></span>
+                        <span class='numVotes likes'><%= movie.likes %></span>
+                    </div>
+                    <div class='btnVote'>
+                        <span class='btnUnlike'><i class='fa fa-thumbs-down fa-2x'></i></span>
+                        <span class='numVotes unlikes'><%= movie.unlikes %></span>
+                    </div>
+                </div>
+                <span class='title'><%= movie.title %></span>
+            </li>
+            <% }) %>
+        </ul>
+        <form id='form' method='post'>
+            <h1>Add Movie</h1>
+            <input type='text' id='title' placeholder='Title of the movie...' />	
+            <button id='btnSubmit' type='submit'>Add</button>
+        </form>
+    </body>
+</html>
