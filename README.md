@@ -1,4 +1,5 @@
-This is a simple voting app made with RethinkDB + Node.js, Express, EJS (as templating language), Socket.IO, and jQuery for the tutorial [Practical Introduction to RethingDB](http://tutorials.pluralsight.com/)
+##README
+This is a simple voting app made with RethinkDB + Node.js, Express, EJS (as templating language), Socket.IO, and jQuery for the tutorial [Practical Introduction to RethinkDB](http://tutorials.pluralsight.com/nosql-databases/a-practical-introduction-to-rethinkdb?status=in-review).
 
 There's a lot of functionality missing, but it has been kept simple on purpose in order to show clearly the integration of RethinkDB's API and how to develop a real-time application.
 
