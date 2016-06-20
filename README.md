@@ -5,11 +5,11 @@ There's a lot of functionality missing, but it has been kept simple on purpose i
 
 To run the application:
 
-1. Install [Node.js](https://nodejs.org/en/download/)
-2. Install and start [RethinkDB](http://rethinkdb.com/docs/install/)
-3. Download this repository and execute `npm init` to download the dependencies.
+1. Install [Node.js](https://nodejs.org/en/download/).
+2. Install and start [RethinkDB](http://rethinkdb.com/docs/install/).
+3. Download this repository and execute `npm install` to download the dependencies.
 4. Execute `npm start`. The database will be created by the application.
-5. Go to http://localhost:3000 and start adding movies
+5. Go to http://localhost:3000 and start adding movies.
 
 ## License
 MIT
